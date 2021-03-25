@@ -33,7 +33,7 @@ jobs:
         uses: actions/cache@v2.1.4
         with:
           path: ~/.poetry
-          key: poetry
+          key: ${{ matrix.os }}-poetry
       # Only runs when key from caching step changes
       - name: Install latest version of Poetry
         if: steps.cache-poetry.outputs.cache-hit != 'true'
@@ -53,7 +53,8 @@ jobs:
         uses: actions/cache@v2.1.4
         with:
           path: ${{github.workspace}}/.venv
-          key: ${{github.workspace}}/poetry.lock
+          key: ${{ matrix.os }}-${{ hashFiles('**/poetry.lock') }}
+          restore-keys: ${{ matrix.os }}-
       - name: Install deps
         if: steps.cache-deps.cache-hit != 'true'
         run: |

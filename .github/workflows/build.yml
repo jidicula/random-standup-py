@@ -27,6 +27,7 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: '3.8'
+      - uses: psf/black@stable
       # Perma-cache Poetry since we only need it for checking pyproject version
       - name: Cache Poetry
         id: cache-poetry

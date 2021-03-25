@@ -18,6 +18,9 @@ exclude = '''
 )\
 '''
 
+[tool.poetry.scripts]
+standup = "random_standup.standup:standup"
+
 [tool.poetry.dependencies]
 python = "^3.8"
 tomlkit = "^0.7.0"

@@ -4,6 +4,22 @@ version = "0.1.0"
 description = "Standup Randomizer"
 authors = ["jidicula <johanan@forcepush.tech>"]
 license = "BSD 3-Clause License"
+readme = "README.md"
+homepage = "https://github.com/jidicula/random-standup-py"
+repository = "https://github.com/jidicula/random-standup-py"
+documentation = "https://github.com/jidicula/random-standup-py"
+keywords = ["agile", "standup"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Office/Business"
+]
 
 [tool.black]
 exclude = '''

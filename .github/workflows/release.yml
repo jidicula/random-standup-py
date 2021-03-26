@@ -10,7 +10,6 @@ jobs:
   autorelease:
     name: Create Release
     runs-on: 'ubuntu-latest'
-    needs: check-version-match
     steps:
       - name: Checkout code
         uses: actions/checkout@v2

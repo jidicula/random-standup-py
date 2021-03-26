@@ -38,7 +38,10 @@ jobs:
           echo "PROJECT_VERSION=$PROJECT_VERSION" >> $GITHUB_ENV
       - name: Check if tag version matches project version
         run: |
-          [[ "$(git describe HEAD --tags --abbrev=0)" != "v$(poetry version --short)" ]] && exit 1
+          TAG=$(git describe HEAD --tags --abbrev=0)
+          echo $TAG
+          echo $PROJECT_VERSION
+          [[ "$TAG" != "v$PROJECT_VERSION" ]] && exit 1
       
       - name: Get Poetry version
         run: poetry --version

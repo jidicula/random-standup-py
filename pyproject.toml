@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "random-standup"
-version = "0.2.0"
+version = "1.0.0"
 description = "Standup Randomizer"
 authors = ["jidicula <johanan@forcepush.tech>"]
 license = "BSD 3-Clause License"
@@ -10,7 +10,7 @@ repository = "https://github.com/jidicula/random-standup-py"
 documentation = "https://github.com/jidicula/random-standup-py"
 keywords = ["agile", "standup"]
 classifiers = [
-    "Development Status :: 4 - Beta",
+    "Development Status :: 5 - Production/Stable",
     "License :: OSI Approved :: BSD License",
     "Operating System :: Microsoft :: Windows",
     "Operating System :: MacOS",

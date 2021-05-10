@@ -44,7 +44,7 @@ click = "^7.1.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2"
-black = "^21.4b2"
+black = "^21.5b0"
 pre-commit = "^2.12.1"
 
 [build-system]

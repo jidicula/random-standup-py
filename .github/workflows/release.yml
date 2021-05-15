@@ -75,4 +75,3 @@ jobs:
             dist/random-standup-${{env.PROJECT_VERSION}}.tar.gz
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: jidicula/random-standup
